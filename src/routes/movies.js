@@ -75,7 +75,8 @@ handleOnChange = (event) => {
 //      let url = `https://swgoh.gg/api/player/${code}/?format=json`
 //      let req = new Request(url); 
       let returnData = "";
-      returnData = await fetch(`http://localhost:4000/movies/update/${this.props.match.params.topicId}`,options);
+      //returnData = await fetch(`http://localhost:4000/movies/update/${this.props.match.params.topicId}`,options);
+      returnData = await fetch(`/movies/update/${this.props.match.params.topicId}`,options);
       //console.log(returnData)
 
       this.setState({
@@ -130,7 +131,8 @@ getMovieComments = async () => {
       } 
 
       let returnData = "";
-      returnData = await fetch(`http://localhost:4000/movies/getcomments/${this.props.match.params.topicId}`);
+      //returnData = await fetch(`http://localhost:4000/movies/getcomments/${this.props.match.params.topicId}`);
+      returnData = await fetch(`/movies/getcomments/${this.props.match.params.topicId}`);
       const data = await returnData.json();
       
       //console.log(data.text);
@@ -171,7 +173,8 @@ getOpComments = async () => {
       } 
 
       let returnData = "";
-      returnData = await fetch(`http://localhost:4000/movies/getcomments/${this.props.match.params.topicId}`);
+      //returnData = await fetch(`http://localhost:4000/movies/getcomments/${this.props.match.params.topicId}`);
+      returnData = await fetch(`/movies/getcomments/${this.props.match.params.topicId}`);
       const data = await returnData.json();
 
       this.setState({

@@ -73,7 +73,8 @@ export default class Signup extends Component {
 //      let url = `https://swgoh.gg/api/player/${code}/?format=json`
 //      let req = new Request(url); 
       let returnData = "";
-      returnData = await fetch("http://localhost:4000/login/set",options);
+      //returnData = await fetch("http://localhost:4000/login/set",options);
+      returnData = await fetch("/login/set",options);
       //console.log(returnData)
 
       this.setState({

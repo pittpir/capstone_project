@@ -76,7 +76,8 @@ export default class Login extends Component {
 
 
       let returnData = "";
-      returnData = await fetch('http://localhost:4000/login/c',options);
+      //returnData = await fetch('http://localhost:4000/login/c',options);
+      returnData = await fetch('/login/c',options);
       //returnData = await fetch(`https://swgoh.gg/api/ships/?format=json`, { mode: 'no-cors'});
       //const response = await (fetch(req));
       //const data = await response.json();

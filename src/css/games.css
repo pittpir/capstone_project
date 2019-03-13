@@ -1,6 +1,7 @@
 .games_page {
   background-color: white;
   min-height: 900px;
+  margin: 0px auto 10px 10px;
 }
 
 .textarea {
@@ -9,7 +10,7 @@
 
 .pics {
 	
-	margin: 50px 50px 50px 50px;
+	
 }
 
 .h2_games {
