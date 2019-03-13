@@ -1,0 +1,11 @@
+@media all and (min-width: 480px) {
+	.login_page {
+		padding: 60px 0;
+	}
+}
+
+.login_page {
+  background-color: white;
+  min-height: 900px;
+}
+
